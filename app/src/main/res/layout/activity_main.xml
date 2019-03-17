@@ -18,39 +18,50 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="match_parent"
+    <ScrollView
+        android:layout_width="407dp"
         android:layout_height="691dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="60dp"
+        android:fillViewport="true"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewSlider">
+        app:layout_constraintTop_toTopOf="parent">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/RecylerViewSlider"
-            android:layout_width="395dp"
-            android:layout_height="204dp"
-            android:layout_marginBottom="17dp"
-            app:layout_constraintBottom_toTopOf="@+id/RecylerViewNews"
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="691dp"
+            android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/RecylerViewNews"
-            android:layout_width="395dp"
-            android:layout_height="455dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="237dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/imageViewSlider">
 
-    </android.support.constraint.ConstraintLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/RecylerViewSlider"
+                android:layout_width="395dp"
+                android:layout_height="204dp"
+                android:layout_marginBottom="17dp"
+                app:layout_constraintBottom_toTopOf="@+id/RecylerViewNews"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/RecylerViewNews"
+                android:layout_width="395dp"
+                android:layout_height="455dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="237dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar2"
@@ -153,7 +164,7 @@
         android:id="@+id/textView4"
         android:layout_width="41dp"
         android:layout_height="13dp"
-        android:layout_marginStart="72dp"
+        android:layout_marginStart="76dp"
         android:text="Ayarlar"
         android:textAlignment="textEnd"
         android:textSize="10sp"

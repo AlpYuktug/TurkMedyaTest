@@ -164,7 +164,6 @@ public class MainActivity extends AppCompatActivity {
                 RecylerViewNews.setAdapter(newsAdapter);
                 RecylerViewNews.setLayoutManager(new LinearLayoutManager(MainActivity.this));
 
-
                 LinearLayoutManager layoutManager = new LinearLayoutManager(MainActivity.this, LinearLayoutManager.HORIZONTAL, false);
                 RecylerViewSlider = (RecyclerView)findViewById(R.id.RecylerViewSlider);
 
